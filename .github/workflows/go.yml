@@ -15,8 +15,8 @@ jobs:
           fetch-depth: 0
       - name: Make daily contribution
         run: |
-          echo -e "\n$(date)\n" >> test.txt
           echo "––––––" >> test.txt
+          echo "$(date)" >> test.txt
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
